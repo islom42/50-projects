@@ -1,0 +1,34 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  opacity: 0;
+}
+.container__panel.active h1 {
+  opacity: 1;
+  transition: 0.7s ease-in 0.5s;
+}
+.container__panel {
+  margin: 15px;
+  flex: 0.5;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+.container__panel.active {
+  flex: 5;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .container__panel:nth-of-type(4),
+  .container__panel:nth-of-type(5) {
+    display: none;
+  }
+}
