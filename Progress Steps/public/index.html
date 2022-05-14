@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-12" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doc</title>
+    <title>50 Projects || 2</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./image/android-chrome-192x192.png" />
+    <link rel="icon" href="./image/android-chrome-512x512.png" />
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+    </style>
   </head>
-  <body class="flex justify-center items-center flex-col h-screen"></body>
+  <body class="flex justify-center items-center h-screen text-3xl">
+    <div class="container text-center">
+      <div
+        class="progress-container relative flex w-2/4 mb-12 m-auto justify-between"
+        id="progress-container"
+      >
+        <div class="progress" id="progress"></div>
+        <div
+          class="circle rounded-full w-12 h-12 flex justify-center items-center bg-white border text-gray-500 active"
+        >
+          1
+        </div>
+        <div
+          class="circle rounded-full w-12 h-12 flex justify-center items-center bg-white border text-gray-500"
+        >
+          2
+        </div>
+        <div
+          class="circle rounded-full w-12 h-12 flex justify-center items-center bg-white border text-gray-500"
+        >
+          3
+        </div>
+        <div
+          class="circle rounded-full w-12 h-12 flex justify-center items-center bg-white border text-gray-500"
+        >
+          4
+        </div>
+        <div
+          class="circle rounded-full w-12 h-12 flex justify-center items-center bg-white border text-gray-500"
+        >
+          5
+        </div>
+      </div>
+      <button
+        class="btn text-white border-0 rounded-xl py-2 px-8"
+        disabled
+        id="prev"
+      >
+        Prev
+      </button>
+      <button class="btn text-white border-0 rounded-xl py-2 px-8" id="next">
+        Next
+      </button>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>

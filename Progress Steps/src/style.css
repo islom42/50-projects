@@ -3,3 +3,43 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.progress-container::before {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+.progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+.circle.active {
+  border-color: #3498db;
+  transition: 0.4s ease;
+}
+.btn {
+  background-color: #3498db;
+}
+.btn:active {
+  transform: scale(0.99);
+}
+.btn:focus {
+  outline: none;
+}
+.btn:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
